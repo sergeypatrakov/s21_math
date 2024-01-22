@@ -15,7 +15,7 @@ long double s21_atan(double x) {
     res = -0.785398;
   } else {
     res = range ? x : 1.0 / x;
-    for (int n = 1; n < 5000; n++) {
+    for (int n = 1; n < 1000; n++) {
       double first = s21_pow(-1, n);
       double second = s21_pow(x, (2 * n + 1) * (range ? 1 : -1));
       double third = 2 * n + 1;
